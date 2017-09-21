@@ -9,7 +9,7 @@ import java.util.Iterator;
  * specified schema specified by a TupleDesc object and contain Field objects
  * with the data for each field.
  */
-public class Tuple implements Serializable {
+public class Tuple implements Serializable, Iterable<Field> {
 
     private static final long serialVersionUID = 1L;
 
@@ -91,7 +91,7 @@ public class Tuple implements Serializable {
      * @return
      *        An iterator which iterates over all the fields of this tuple
      * */
-    public Iterator<Field> fields()
+    public Iterator<Field> iterator()
     {
         // some code goes here
         return null;

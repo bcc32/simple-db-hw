@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * TupleDesc describes the schema of a tuple.
  */
-public class TupleDesc implements Serializable {
+public class TupleDesc implements Serializable, Iterable<TDItem> {
 
     /**
      * A help class to facilitate organizing the information of each field

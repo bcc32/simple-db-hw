@@ -11,7 +11,7 @@ import java.io.*;
  * @see BufferPool
  *
  */
-public class HeapPage implements Page {
+public class HeapPage implements Page, Iterable<Tuple> {
 
     final HeapPageId pid;
     final TupleDesc td;

@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 
  * @Threadsafe
  */
-public class Catalog {
+public class Catalog implements Iterable<Integer> {
 
     /**
      * Constructor.
@@ -90,7 +90,10 @@ public class Catalog {
         return null;
     }
 
-    public Iterator<Integer> tableIdIterator() {
+    /**
+     * Returns an Iterator over the table IDs in this Catalog.
+     */
+    public Iterator<Integer> iterator() {
         // some code goes here
         return null;
     }
